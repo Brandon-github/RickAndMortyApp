@@ -1,0 +1,22 @@
+.error {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+}
+
+.error__title,
+.error__subtitle {
+  color: var(--bg-text);
+} 
+
+.error__title {
+  font-size: 6rem;
+}
+
+.error__subtitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
