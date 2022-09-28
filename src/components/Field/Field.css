@@ -1,0 +1,12 @@
+.field {
+  width: 500px;
+  max-width: 90%;
+  height: 50px;
+  padding: 1rem;
+  outline: none;
+  margin: auto;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border-style: none;
+  color: #222;
+}
