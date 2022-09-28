@@ -1,0 +1,33 @@
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 80px;
+  background-color: var(--bg-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 999;
+}
+
+.nav__brand {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav__brand,
+.nav__link {
+  text-decoration: none;
+  color: var(--bg-text);
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav__item {
+  list-style: none;
+}
+
