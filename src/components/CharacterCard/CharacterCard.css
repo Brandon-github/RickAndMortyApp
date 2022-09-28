@@ -1,0 +1,68 @@
+:root {
+  --character-status: #ccc;
+}
+
+.characterCard {
+  width: 500px;
+  max-width: 90%;
+  background-color: #2c3e50;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.characterCard__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  flex-direction: column;
+}
+
+.characterCard__image {
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 1rem;
+  width: 250px;
+  height: 250px;
+}
+
+.characterCard__content {
+  width: 100%;
+  height: 100%;
+  color: var(--bg-text);
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.characterCard__name {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--bg-text);
+  background-color: var(--bg-terciary);
+}
+
+.characterCard__status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.characterCard__status--circle {
+  width: 15px;
+  height: 15px;
+  background-color: var(--character-status);
+  box-shadow: 0 0 10px var(--character-status),
+              0 0 15px var(--character-status),
+              0 0 20px var(--character-status);
+  border-radius: 50%;
+}
+
+.characterCard__status--Alive {--character-status: green; }
+.characterCard__status--Dead {--character-status: red; }
+.characterCard__status--unknown {--character-status: #fc0; }
+
