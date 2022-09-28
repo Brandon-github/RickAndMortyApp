@@ -1,0 +1,19 @@
+.characters {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.characters__title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  color: var(--bg-text);
+}
+
+.characters__buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
