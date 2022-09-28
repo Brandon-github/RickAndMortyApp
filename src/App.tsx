@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage/HomePage';
+import CharactersPage from './pages/CharactersPage/CharactersPage';
+import CharacterPage from './pages/CharacterPage/CharacterPage';
+import SearchPage from './pages/SearchPage/SearchPage';
+import Error404 from './pages/Error/Error404/Error404';
+import ErrorPage from './pages/Error/ErrorPage/ErrorPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/characters/page/:id" element={<CharactersPage />} />
+        <Route path="/character/:id" element={<CharacterPage />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="*" element={<Error404 />} />
+        <Route path="error/page" element={<ErrorPage />} />
+      </Routes>
     </div>
   );
 }
