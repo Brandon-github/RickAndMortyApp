@@ -1,0 +1,11 @@
+.searchPage {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.searchPage__container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 0 0;
+  flex-direction: column;
+}
